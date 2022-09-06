@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b52839d0-01ac-4537-be32-7c47a4bbe42c" name="Changes" comment="" />
+    <list default="true" id="b52839d0-01ac-4537-be32-7c47a4bbe42c" name="Changes" comment="Initial commit.">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab02.2/src/Television.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab02.2/src/Television.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab02.2/src/TelevisionClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab02.2/src/TelevisionClient.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,17 +32,22 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/JAVA/Course Materials/Java-Part1/LabSetup_Java-Part1/StudentWork/IntroJava/part 1-workspace",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/JAVA/Course Materials/Java-Part1/LabSetup_Java-Part1/StudentWork/IntroJava/part 1-workspace&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\JAVA\Course Materials\Java-Part1\LabSetup_Java-Part1\StudentWork\IntroJava\part 1-workspace" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="TelevisionClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TelevisionClient" />
@@ -61,6 +71,14 @@
       <option name="presentableId" value="Default" />
       <updated>1662048831475</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit.">
+      <created>1662071639687</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662071639687</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -73,5 +91,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
   </component>
 </project>
