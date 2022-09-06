@@ -1,21 +1,41 @@
-public class TelevisionClient {
+public class Television {
 
-  public static void main(String[] args) {
+    private String brand;
+    private int volume;
 
-      Television tv1 = new Television();
-      tv1.setBrand("Samsung");
-      tv1.setVolume(32);
+    public void turnOn() {
+        boolean isConnected = verifyInternetConnection();
+        System.out.println("The " + brand + " television is on, with a volume of " + volume);
+    }
 
-      Television tv2 = new Television();
-      tv2.setBrand("LG");
-      tv2.setVolume(35);
+    public void turnOff() { System.out.println("The " + brand + " television is off"); }
 
-      tv1.turnOn();
-      tv1.turnOff();
 
-      tv2.turnOn();
-      tv2.turnOff();
-System.out.println(tv1.toString());
-System.out.println(tv2);
-  }
+
+    public String getBrand() { return brand; }
+
+
+
+    public void setBrand(String brand) { this.brand = brand; }
+
+
+
+    public int getVolume() { return volume; }
+
+
+
+    public void setVolume(int volume) { this.volume = volume; }
+
+
+
+    private boolean verifyInternetConnection {
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Television{brand='" + brand + "', volume=" + volume + "}";
+
+    }
+
 }

@@ -2,6 +2,35 @@ import java.io.StringBufferInputStream;
 
 public class Television {
 
+
+  private String
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
   private String brand;
   int volume;
 
