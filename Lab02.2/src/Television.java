@@ -1,72 +1,39 @@
-import java.io.StringBufferInputStream;
+package com.entertainment;
+
+import java.util.Set;
 
 public class Television {
 
+  public static final int MIN_VOLUME = 0;
+  public static final int MAX_VOLUME = 100;
+  public static final Set<String> VALID_BRANDS = Set.of("Samsung", "LG", "Sony", "Toshiba");
 
-  private String
+  private static final String INVALID_BRAND_FORMAT =
+      "%s is not a valid brand; one of %s is required.%n";
+  private static final String INVALID_VOLUME_FORMAT =
+      "%d is invalid; volume must be between %d and %d (inclusive).%n";
+  private static final String TO_STRING_FORMAT = "com.entertainment.Television: bran=%s, volume=%d, displayi=%s";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+  private static int instanceCount = 0;
 
   private String brand;
-  int volume;
+  private int volume;
+  private DisplayType display = DisplayType.LED;
 
-  public void turnOn() {
-    System.out.println("The " + " television is on, with a volume of " + volume);
+  public Television() { instanceCount++; }
+
+
+
+  public Television(String brand) {
+    this();
+    setBrand(brand);
   }
 
-  void turnOff() {
-    System.out.println("The " + brand + " television is off");}
-
-  public String getBrand() {
-    return brand;
+  public Television(String brand, int volume) {
+    this(brand);
+    setVolume(volume);
   }
 
-  public void setBrand(String brand) {
-    this.brand = brand;
-  }
 
-  public int getVolume() {
-    return volume;
-  }
-
-  public void setVolume(int volume) {
-    this.volume = volume;
-  }
-
-  public void setBrand() {
-
-  }
-
-    public String toString(){
-    return "Television: Brand=" +brand + ",volume" + volume;
-
-    }
-
-  public void setVolume() {
-  }
 }
 

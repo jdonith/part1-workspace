@@ -12,6 +12,7 @@
  * For the purposes of this lab, we give you a few wildcarded imports,
  * so you can use the classes in these packages without having to worry about importing them.
  */
+import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.format.*;
 
@@ -22,7 +23,7 @@ class DateTimeTest {
      * To run one test method at a time, uncomment the call to the one you want to execute.
      */
     public static void main(String[] args) {
-        // testNow();
+        testNow();
         // testCreate();
         // testParse();
         // testFormat();
@@ -33,16 +34,27 @@ class DateTimeTest {
      */
     public static void testNow() {
         // TODO
-    }
+
+            LocalDateTime.now();
+            System.out.println(LocalDateTime.now());
+        }
+
 
     /**
      * TASK: implement the TODOs and print your results.
      */
     public static void testCreate() {
         // TODO: create your birthday via of(). What day of the week were you born on?
+        //LocalDate.of(1987, 01,07).getDayOfWeek();
+        LocalDate birthday = LocalDate.of(1987, 01,07);
+        System.out.println(birthday);
 
         // TODO: use of() to create a value representing the 1st lunar landing - it happened on 7/20/69 at 3:18pm Eastern Time.
         // NOTE: ignore time-zone, just assume Eastern Time is the local time.
+        LocalDateTime lunarLanding = LocalDateTime.of(1969, 7, 20, 15 , 18);
+        //LocalDate.of(1969, 07,20).getDayOfWeek();
+        System.out.println(LocalDate.of());
+
     }
 
     /**
@@ -50,7 +62,8 @@ class DateTimeTest {
      */
     public static void testParse() {
         // TODO: create your birthday by parsing a text representation in standard format ("yyyy-MM-dd").
-
+LocalDate birthday = LocalDate.parse("1987-01-07");
+System.out.println(birthday);
         // OPTIONAL: now create it by parsing text in the form "2/6/2014" (this is Feb 6, not Jun 2).
     }
 
@@ -59,6 +72,8 @@ class DateTimeTest {
      */
     public static void testFormat() {
         LocalDate hastings = LocalDate.of(1066, 10, 14);
+        DateTimeFormatter usDateFormate = DateTimeFormatter.ofPattern("M/d/yyyy");
+        System.out.println(usDateFormate.format(hastings));
 
         // TODO: 10/14/1066
 
